@@ -11,12 +11,10 @@ export default function Contact() {
     message: "",
   });
 
-  // Gestion du changement des inputs
   const handleChange = (e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>) => {
     setForm({ ...form, [e.target.name]: e.target.value });
   };
 
-  // Gestion de l'envoi du formulaire
   const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
     setStatus({ type: "loading", message: "" });
@@ -45,16 +43,10 @@ export default function Contact() {
     <section className="relative container mx-auto px-4 md:px-8 lg:px-40 py-16"
       id="contact">
       {/* Titre principal */}
-      <motion.h2
-        initial={{ opacity: 0, y: 20 }}
-        whileInView={{ opacity: 1, y: 0 }}
-        transition={{ duration: 0.6 }}
-        viewport={{ once: true }}
-        className="text-3xl font-bold text-blue-400 mb-10"
-      >
-        // Me Contacter
-      </motion.h2>
-      <div className="grid md:grid-cols-2 gap-12 items-center bg-[#0f1b2d] rounded-2xl p-8">
+      <h2 className="text-3xl font-bold text-blue-400 mb-10">
+        {"// Prendre Contact"}
+      </h2>
+      <div className="grid md:grid-cols-2 gap-12 items-center bg-primary rounded-2xl p-8 shadow-lg shadow-blue-500/40">
         
         {/* ====== Colonne gauche - Infos ====== */}
         <motion.div
@@ -63,10 +55,10 @@ export default function Contact() {
           transition={{ duration: 0.6 }}
           viewport={{ once: true }}
         >
-          <h2 className="text-3xl font-bold text-white mb-2">Let's Talk</h2>
-          <h3 className="text-3xl font-bold text-cyan-400 mb-4">We'd love to help</h3>
+          <h2 className="text-3xl font-bold text-white mb-2">Envie de discuter ?</h2>
+          <h3 className="text-3xl font-bold text-cyan-400 mb-4">{"N'hésitez pas à me contacter !"}</h3>
           <p className="text-gray-300 mb-8">
-            Crafting innovative solutions to solve real-world problems
+            {"Je suis actuellement ouvert aux oppotunités d'alternances."}
           </p>
 
           <div className="space-y-4">
@@ -81,7 +73,7 @@ export default function Contact() {
             <div className="flex items-center gap-3 text-gray-300">
               <FaPhone className="text-cyan-400 text-xl" />
               <a href="tel:+33776855577" className="hover:underline">
-                +33 776855577
+                +33 7 76 85 55 77
               </a>
             </div>
             {/* LinkedIn */}
@@ -111,7 +103,7 @@ export default function Contact() {
           <input
             type="text"
             name="name"
-            placeholder="Your name here"
+            placeholder="Votre nom"
             value={form.name}
             onChange={handleChange}
             required
@@ -120,7 +112,7 @@ export default function Contact() {
           <input
             type="email"
             name="email"
-            placeholder="Your email address here"
+            placeholder="Votre adresse mail"
             value={form.email}
             onChange={handleChange}
             required
@@ -129,7 +121,7 @@ export default function Contact() {
           <input
             type="text"
             name="subject"
-            placeholder="Your subject here"
+            placeholder="Objet de votre message"
             value={form.subject}
             onChange={handleChange}
             required
@@ -137,7 +129,7 @@ export default function Contact() {
           />
           <textarea
             name="message"
-            placeholder="Your message here"
+            placeholder="Votre message"
             rows={5}
             value={form.message}
             onChange={handleChange}
@@ -172,7 +164,7 @@ export default function Contact() {
                 ></path>
               </svg>
             )}
-            {status.type === "loading" ? "Sending..." : "Submit"}
+            {status.type === "loading" ? "Sending..." : "Soumettre"}
           </button>
 
           {/* Message de statut avec animation */}

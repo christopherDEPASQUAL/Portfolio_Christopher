@@ -48,7 +48,7 @@ const ExperienceSection = () => {
         viewport={{ once: true }}
         className="text-3xl font-bold text-blue-400 mb-10"
       >
-        // Mon Parcours
+        {"// Mon Parcours"}
       </motion.h2>
 
       {/* Timeline container */}

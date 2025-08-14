@@ -12,8 +12,8 @@ const greetings = [
   "Ciao",
   "Hallo",
   "Olá",
-  "こんにちは", // Japonais
-  "안녕하세요", // Coréen
+  "こんにちは",
+  "안녕하세요",
 ];
 
 const Hero = () => {
@@ -43,12 +43,13 @@ const Hero = () => {
               {greetings[index]},
             </motion.span>
           </AnimatePresence>
-          <span className="text-white">je suis <span className="font-bold text-blue-400">Christopher De Pasqual</span></span>
+          <span className="text-white">je suis <span className="font-bold text-cyan-400">Christopher De Pasqual</span></span>
         </h1>
 
         <ReactTyped
           strings={[
             "En formation",
+            "Disponible pour une alternance",
             "Développeur web",
             "Frontend developper",
             "BackEnd developper",

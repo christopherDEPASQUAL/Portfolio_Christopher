@@ -1,4 +1,3 @@
-// src/components/ProjectCard.tsx
 import React from "react";
 import { Project } from "@/data/projectsData";
 import { FaGithub, FaExternalLinkAlt, FaGlobe} from "react-icons/fa";
@@ -10,7 +9,7 @@ interface Props {
 
 const ProjectCard: React.FC<Props> = ({ project }) => {
   return (
-    <div className=" bg-primary border border-gray-700 rounded-xl overflow-hidden shadow-md hover:shadow-lg hover:shadow-blue-500/40 transition-shadow">
+    <div className=" bg-primary border border-gray-700  rounded-xl overflow-hidden shadow-md hover:shadow-lg hover:shadow-blue-500/40 transition-shadow">
         <div className="flex gap-4 relative group">
           {project.githubUrl && (
             <a

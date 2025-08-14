@@ -16,11 +16,10 @@ const icons = [
 ];
 
 const AnimatedIcons = () => {
-  const [radius, setRadius] = useState(160); // par défaut desktop
+  const [radius, setRadius] = useState(160);
   const controls = useAnimation();
   const angleRef = useRef(0);
 
-  // Ajuste le rayon selon la taille d’écran
   useEffect(() => {
     const updateRadius = () => {
       if (window.innerWidth < 640) setRadius(95);
@@ -44,25 +43,8 @@ const AnimatedIcons = () => {
           transition: { duration: 5, ease: "easeInOut" },
         });
 
-        // angleRef.current += 360;
-        // await controls.start({
-        //   rotate: angleRef.current,
-        //   transition: { duration: 5, ease: "easeOut" },
-        // });
-
         await new Promise((res) => setTimeout(res, 20000));
 
-        // angleRef.current += 360;
-        // await controls.start({
-        //   rotate: angleRef.current,
-        //   transition: { duration: 8, ease: "easeIn" },
-        // });
-
-        // angleRef.current += 360;
-        // await controls.start({
-        //   rotate: angleRef.current,
-        //   transition: { duration: 3, ease: "easeInOut" },
-        // });
       }
     };
 
