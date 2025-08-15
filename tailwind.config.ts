@@ -13,9 +13,6 @@ theme: {
     },
   },
 },
-plugins: [require("daisyui")],
-
-
 
 
 };

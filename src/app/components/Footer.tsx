@@ -1,11 +1,13 @@
 const Footer = () => {
-  return (
-<footer className="footer sm:footer-horizontal footer-center bg-base-300 text-base-content p-4">
-  <aside>
-    <p>Copyright © {new Date().getFullYear()} - All right reserved</p>
-  </aside>
-</footer>
-  )
-}
+  const year = new Date().getFullYear();
 
-export default Footer
+  return (
+    <footer className="bg-primary text-base-content p-4">
+      <div className="container mx-auto text-center text-white">
+        <p>Copyrigh© {year} - Tous droits réservés</p>
+      </div>
+    </footer>
+  );
+};
+
+export default Footer;

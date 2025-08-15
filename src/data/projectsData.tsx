@@ -48,7 +48,7 @@ export const projects: Project[] = [
     {
     title: "Git from Scratch",
     description:
-      "Reproduction des commandes porcelaines et plombières de Git",
+      "Développement d’une version simplifiée de Git notamment son architecture interne (plumbing et porcelain commands)",
     image: "/git_scratch.png",
     date: "23 Juillet 2025",
     githubUrl: "https://github.com/Woodiss/hetic_git/tree/dp/feature/commit-tree",

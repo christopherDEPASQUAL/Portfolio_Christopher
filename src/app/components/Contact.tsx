@@ -58,7 +58,7 @@ export default function Contact() {
           <h2 className="text-3xl font-bold text-white mb-2">Envie de discuter ?</h2>
           <h3 className="text-3xl font-bold text-cyan-400 mb-4">{"N'hésitez pas à me contacter !"}</h3>
           <p className="text-gray-300 mb-8">
-            {"Je suis actuellement ouvert aux oppotunités d'alternances."}
+            {"Je suis actuellement ouvert aux opportunités d'alternances."}
           </p>
 
           <div className="space-y-4">

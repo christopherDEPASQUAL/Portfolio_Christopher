@@ -44,12 +44,12 @@ export default function Navbar() {
   return (
     <nav
       className="
-  mb-4 sm:mb-6 md:mb-8
-  mt-4 sm:mt-6 md:mt-8
+  mx-4
+  my-4 sm:my-6 md:my-8
   rounded-lg border border-green-400/50
   lg:mx-40
   md:mx-[22px]
-  sm:mx-4
+  sm:mx-8
   backdrop-blur-lg shadow-lg
 "
 

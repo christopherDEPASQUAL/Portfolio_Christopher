@@ -60,33 +60,6 @@ const ProjectCard: React.FC<Props> = ({ project }) => {
           ))}
         </div>
 
-        <div className="flex gap-4">
-          {project.githubUrl && (
-            <a
-              href={project.githubUrl}
-              target="_blank"
-              rel="noopener noreferrer"
-              className="text-gray-300 hover:text-white transition-colors"
-            >
-              {project.githubUrl.includes("github.com") ? (
-                <FaGithub size={20} />
-              ) : (
-                <FaGlobe size={20} />
-              )}
-            </a>
-          )}
-
-          {project.liveUrl && (
-            <a
-              href={project.liveUrl}
-              target="_blank"
-              rel="noopener noreferrer"
-              className="text-gray-300 hover:text-white"
-            >
-              <FaExternalLinkAlt size={20} />
-            </a>
-          )}
-        </div>
       </div>
     </div>
   );

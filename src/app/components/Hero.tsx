@@ -22,7 +22,7 @@ const Hero = () => {
   useEffect(() => {
     const interval = setInterval(() => {
       setIndex((prev) => (prev + 1) % greetings.length);
-    }, 15000);
+    }, 5000);
     return () => clearInterval(interval);
   }, []);
 
@@ -38,7 +38,7 @@ const Hero = () => {
               animate={{ opacity: 1, y: 0 }}
               exit={{ opacity: 0, y: -20 }}
               transition={{ duration: 1 }}
-              className="inline-block"
+              className="inline-block text-white"
             >
               {greetings[index]},
             </motion.span>
@@ -53,6 +53,9 @@ const Hero = () => {
             "Développeur web",
             "Frontend developper",
             "BackEnd developper",
+            "Fullstack developper",
+            "Innovant et adaptable",
+            "Passionné par le code",
           ]}
           typeSpeed={60}
           backSpeed={5}
@@ -72,22 +75,24 @@ const Hero = () => {
             fill
             className="object-cover"
           />
-          <div className="absolute inset-0 bg-black/50 flex flex-col items-center justify-center gap-4 opacity-0 group-hover:opacity-100">
+          <div className="absolute inset-0 bg-black/50 flex flex-col items-center justify-center gap-2 opacity-0 group-hover:opacity-100 transition-opacity duration-300">
             <a
               href="/CV.pdf"
               download
-              className="btn bg-blue-50 dark:bg-blue-900/20 p-2 md:p-3 rounded-lg border border-blue-200 dark:border-blue-800 hover:shadow-lg hover:shadow-blue-500/20 duration-300"
+              className="bg-blue-50 text-white dark:bg-blue-900/20 sm:p-1 md:p-1 lg:p-1 text-xs sm:text-base md:text-lg lg:text-lg rounded-lg border border-blue-200 dark:border-blue-800 hover:shadow-lg hover:shadow-blue-500/20 duration-300"
             >
               Télécharger mon CV
             </a>
             <a
               href="/Lettre.pdf"
               download
-              className="btn bg-blue-50 dark:bg-blue-900/20 p-2 md:p-3 rounded-lg border border-blue-200 dark:border-blue-800 hover:shadow-lg hover:shadow-blue-500/20 transition duration-300"
+              className="bg-blue-50 text-white dark:bg-blue-900/20 sm:p-1 md:p-1 lg:p-1 text-xs sm:text-base md:text-lg lg:text-lg rounded-lg border border-blue-200 dark:border-blue-800 hover:shadow-lg hover:shadow-blue-500/20 transition duration-300"
             >
-              Télécharger ma Lettre de Motivation
+              Ma Lettre de Motivation
             </a>
           </div>
+
+
         </div>
       </div>
     </section>

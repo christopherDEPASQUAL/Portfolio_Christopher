@@ -111,7 +111,7 @@ const SkillCard = ({ skill }: { skill: Skill }) => {
       ) : (
         <Icon size={38} color={skill.color} />
       )}
-      <p className="mt-3 text-sm font-medium text-center">{skill.name}</p>
+      <p className="mt-3 text-sm font-medium text-center text-white">{skill.name}</p>
     </div>
   );
 };
